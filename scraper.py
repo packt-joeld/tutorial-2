@@ -6,9 +6,9 @@ tds = root.cssselect('td') # get all the <td tags
 for td in tds:
     record = { "td" : td.text } # column name and value
     try:
-        scraperwiki.sqlite.save(["td"], record) # save the records one by 
+        scraperwiki.sqlite.save(["td"], record) # save the records one by \
 one
     except:
         record = { "td" : "NO ENTRY" } # column name and value
-        scraperwiki.sqlite.save(["td"], record) # save the records one by 
+        scraperwiki.sqlite.save(["td"], record) # save the records one by \
 one
